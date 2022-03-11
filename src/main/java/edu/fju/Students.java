@@ -17,11 +17,13 @@ public class Students {
         this("John",60,50);
     }
     public void print(){
-        int average = (math+english)/2;
-        System.out.print(names+" "+math+" "+english+" "+average);
-        if (average<60){
+        System.out.print(names+" "+math+" "+english+" "+ getAverage());
+        if ( getAverage()<60){
             System.out.print("*");
         }
         System.out.println();
+    }
+    public int getAverage(){
+        return (math+english)/2;
     }
 }

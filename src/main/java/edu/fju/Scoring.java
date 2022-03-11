@@ -8,8 +8,10 @@ public class Scoring {
         //candy.english=88;
         Students jack = new Students("Jack",60,85);
         Students s = new Students();
+        GraduateStudent jane = new GraduateStudent("Jnae",80,50,66);
         candy.print();
         jack.print();
         s.print();
+        jane.print();
     }
 }
