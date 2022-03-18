@@ -8,13 +8,16 @@ public class Customer {
         this.id=id;
         this.amount=amount;
     }
+    public int backMoney(){
+        return ((amount/1000)*100);
+    }
     public int total(){
-        return amount-((amount/1000)*100);
+        return amount-backMoney();
     }
     public void print(){
-        //float offMoney=(amount/1000)*;
         System.out.println(id+" "+amount+" "+total());
-        //System.out.println(id+" "+amount+" "+(amount-offMoney));
+        /*float offMoney=(amount/1000)*off*1000;
+        System.out.println(id+" "+amount+" "+(amount-offMoney));*/
 
     }
 }
