@@ -1,11 +1,13 @@
 package edu.fju;
 
-public class GoldenCustomer extends Customer {
+public class GoldenCustomer extends SilverCustomer {
     public GoldenCustomer(String id,int amount){
         super(id,amount);
+        //off=0.2f;
     }
     @Override
-    public int total(){
-        return amount-((amount/1000)*200);
+    public int backMoney(){
+        return (amount/1000)*200;
     }
+
 }

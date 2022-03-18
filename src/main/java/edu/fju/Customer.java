@@ -3,7 +3,7 @@ package edu.fju;
 public class Customer {
     String  id;
     int amount;
-    float off =0.1f;
+    //float off =0.1f;
     public Customer(String id, int amount){
         this.id=id;
         this.amount=amount;
