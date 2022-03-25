@@ -1,4 +1,4 @@
-package edu.fju;
+package edu.fju.sales;
 
 public class SalesTester {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package edu.fju;
+package edu.fju.sales;
 
 public class Customer {
     String  id;
