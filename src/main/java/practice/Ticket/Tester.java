@@ -1,7 +1,6 @@
-package edu.fju.ticket;
+package practice.Ticket;
 
 import java.util.Scanner;
-import edu.fju.ticket.Station;
 
 public class Tester {
     public static void main(String[] args) {
@@ -41,28 +40,25 @@ public class Tester {
                 break;
 
         }
-        System.out.println("What kind of ticket do you want? (1:General, 2:Student, 3:Elder, 4:Return)");
-        int tickettype = Integer.parseInt(scanner.next());
-        TicketType type_Ticket = null;
-        switch (tickettype) {
-            case 1:
-                type_Ticket = TicketType.GENERAL_TICKET;
-                break;
-            case 2:
-                type_Ticket = TicketType.STUDENT_TICKET;
-            case 3:
-                type_Ticket = TicketType.ELDER_TICKET;
-            case 4:
-                type_Ticket = TicketType.RETURN_TICKET;
-        }
-        System.out.println("How many tickets do you need?");
-        int number = Integer.parseInt(scanner.next());
 
-        Ticket jane = new Ticket(start_Station,destination_Station,type_Ticket,number);
-        Ticket bee = new Ticket(start_Station,destination_Station,type_Ticket,number);
+        System.out.println("How many general tickets do you need?");
+        int number = Integer.parseInt(scanner.next());
+        System.out.println("How many student's tickets do you need?");
+        int studentnumber = Integer.parseInt(scanner.next());
+        System.out.println("How many old man's tickets do you need?");
+        int oldmannumber = Integer.parseInt(scanner.next());
+        System.out.println("How many return tickets do you need?");
+        int returnnumber = Integer.parseInt(scanner.next());
+
+        Ticket ticket = new Ticket(start_Station,destination_Station,number);
+        StudentTicket jane = new StudentTicket(start_Station,destination_Station,studentnumber);
+        OldPeopleTicket bee = new OldPeopleTicket(start_Station,destination_Station,oldmannumber);
+        ReturnTicket jack = new ReturnTicket(start_Station,destination_Station,returnnumber);
+        ticket.print();
         jane.print();
         bee.print();
-
-
+        jack.print();
+        int total = ticket.price()+ jane.price()+bee.price()+ jack.price();
+        System.out.println("Total: "+total);
     }
 }

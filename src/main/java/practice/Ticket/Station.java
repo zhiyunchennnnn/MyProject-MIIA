@@ -1,4 +1,4 @@
-package edu.fju.ticket;
+package practice.Ticket;
 
 public class Station {
     public static final Station TAIPEI_STATION=

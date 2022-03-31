@@ -1,19 +1,13 @@
-package edu.fju.ticket;
+package practice.Ticket;
 
 public class Ticket {
-    /*public static final int TAIPEI_STATION =100;
-    public static final int TAICHUNG_STATION =200;
-    public static final int KAOHSIUNG_STATION =300;
-    */
     Station start;
     Station destination;
-    TicketType ticket;
     int quantity;
-    public Ticket(Station start, Station destination, TicketType ticket,int quantity){
+    public Ticket(Station start, Station destination,int quantity){
         this.start=start;
         this.destination=destination;
         this.quantity=quantity;
-        this.ticket=ticket;
     }
     /*public int total() {
         if (start.id == 0) {
@@ -37,14 +31,13 @@ public class Ticket {
         }
         return price;
     }*/
-
     public int abs (){
         return (start.id-destination.id)>0? (start.id-destination.id):-(start.id-destination.id);
     }
     public int price(){
-        return abs()*quantity*ticket.id;
+        return abs()*quantity;
     }
     public void print(){
-        System.out.println(start.name+"-"+destination.name+" "+ticket.name+", Quantity:"+quantity+",  Price:" +price());
+        System.out.println(start.name+"-"+destination.name+", Quantity:"+quantity+", General Ticket,  Price:" +price());
     }
 }
