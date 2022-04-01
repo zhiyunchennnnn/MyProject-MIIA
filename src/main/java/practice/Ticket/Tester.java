@@ -1,7 +1,5 @@
 package practice.Ticket;
 
-import edu.fju.ticket.TicketType;
-
 import java.util.Scanner;
 
 public class Tester {
@@ -9,9 +7,9 @@ public class Tester {
         //Constructor,constant,value
         System.out.println("Your start station?(1:Taipei , 2:Taichung , 3:Kaohsiung)");
         Scanner scanner = new Scanner(System.in);
-        int startStation = Integer.parseInt(scanner.next());
+        int startchoice = Integer.parseInt(scanner.next());
         Station start_Station = null;
-        switch (startStation){
+        switch (startchoice){
             case 1:
                 start_Station=Station.TAIPEI_STATION;
                 break;
@@ -26,9 +24,9 @@ public class Tester {
 
         }
         System.out.println("Your destination station?(1:Taipei , 2:Taichung , 3:Kaohsiung)");
-        int destinationStation = Integer.parseInt(scanner.next());
+        int destinationchoice = Integer.parseInt(scanner.next());
         Station destination_Station = null;
-        switch (destinationStation){
+        switch (destinationchoice){
             case 1:
                 destination_Station=Station.TAIPEI_STATION;
                 break;
@@ -44,26 +42,29 @@ public class Tester {
         }
         System.out.println("What kind of ticket do you want? (1:General, 2:Student, 3:Elder, 4:Return)");
         int tickettype = Integer.parseInt(scanner.next());
-        Ticket ticket = null;
+        TicketType type_Ticket = null;
         switch (tickettype) {
             case 1:
-                ticket = new Ticket(start_Station,destination_Station);
+                type_Ticket = TicketType.GENERAL_TICKET;
                 break;
             case 2:
-                ticket = new StudentTicket(start_Station,destination_Station);
+                type_Ticket = TicketType.STUDENT_TICKET;
                 break;
             case 3:
-                ticket = new OldPeopleTicket(start_Station,destination_Station);
+                type_Ticket = TicketType.ELDER_TICKET;
                 break;
             case 4:
-                ticket = new ReturnTicket(start_Station,destination_Station);
-                break;
-            default:
+                type_Ticket = TicketType.RETURN_TICKET;
                 break;
         }
+        System.out.println("How many tickets do you need?");
+        int number = Integer.parseInt(scanner.next());
 
-        //System.out.println("How many ticket do you need?");
-        //int number = Integer.parseInt(scanner.next());
-        ticket.print();
+        Ticket jane = new Ticket(start_Station,destination_Station,type_Ticket,number);
+        Ticket bee = new Ticket(start_Station,destination_Station,type_Ticket,number);
+        jane.print();
+        bee.print();
+
+
     }
 }

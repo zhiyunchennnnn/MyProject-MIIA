@@ -1,7 +1,7 @@
-package practice.Ticket;
+package edu.fju.ticket;
 
-public class OldPeopleTicket extends Ticket{
-    public OldPeopleTicket(Station start, Station destination){
+public class ElderTicket extends Ticket{
+    public ElderTicket(Station start, Station destination){
         super(start,destination);
     }
     @Override

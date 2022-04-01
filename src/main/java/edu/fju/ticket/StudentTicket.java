@@ -1,4 +1,4 @@
-package practice.Ticket;
+package edu.fju.ticket;
 
 public class StudentTicket extends Ticket{
     float off = 0.1f;

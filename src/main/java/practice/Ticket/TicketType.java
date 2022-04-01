@@ -1,4 +1,4 @@
-package edu.fju.ticket;
+package practice.Ticket;
 
 public class TicketType {
     public static final TicketType GENERAL_TICKET=new TicketType(1,"General ticket");

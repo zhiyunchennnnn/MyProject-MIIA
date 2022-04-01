@@ -1,4 +1,4 @@
-package practice.Ticket;
+package edu.fju.ticket;
 
 public class ReturnTicket extends Ticket{
     public ReturnTicket(Station start, Station destination){
