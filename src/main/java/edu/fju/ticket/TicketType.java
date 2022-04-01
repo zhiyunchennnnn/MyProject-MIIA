@@ -6,11 +6,11 @@ public class TicketType {
     public static final TicketType ELDER_TICKET=new TicketType(5/10,"Elder ticket");
     public static final TicketType RETURN_TICKET=new TicketType(9/10,"Return ticket");
 
-    String name;
+    String type;
     int id ;
-    public TicketType(int id ,String name){
+    public TicketType(int id ,String type){
         this.id = id;
-        this.name = name;
+        this.type = type;
 
     }
 }

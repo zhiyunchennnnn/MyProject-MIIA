@@ -50,10 +50,13 @@ public class Tester {
                 break;
             case 2:
                 type_Ticket = TicketType.STUDENT_TICKET;
+                break;
             case 3:
                 type_Ticket = TicketType.ELDER_TICKET;
+                break;
             case 4:
                 type_Ticket = TicketType.RETURN_TICKET;
+                break;
         }
         System.out.println("How many tickets do you need?");
         int number = Integer.parseInt(scanner.next());

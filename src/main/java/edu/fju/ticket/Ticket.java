@@ -46,6 +46,6 @@ public class Ticket {
         return abs()*quantity*ticket.id;
     }
     public void print(){
-        System.out.println(start.name+"-"+destination.name+" "+ticket.name+", Quantity:"+quantity+",  Price:" +price());
+        System.out.println(start.name+"-"+destination.name+" "+ticket.type+", Quantity:"+quantity+",  Price:" +price());
     }
 }
