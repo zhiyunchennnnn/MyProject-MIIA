@@ -10,6 +10,7 @@ public class Customer {
     }
     public int backMoney(){
         return ((amount/1000)*100);
+        //(amount/1000)*off*1000
     }
     public int total(){
         return amount-backMoney();

@@ -9,6 +9,7 @@ public class Ticket {
     Station destination;
     TicketType ticket;
     int quantity;
+
     public Ticket(Station start, Station destination, TicketType ticket,int quantity){
         this.start=start;
         this.destination=destination;

@@ -1,16 +1,18 @@
 package practice.Ticket;
 
 public class StudentTicket extends Ticket{
-    public StudentTicket(Station start, Station destination, int quantity){
-        super(start,destination,quantity);
+    float off = 0.1f;
+    public StudentTicket(Station start, Station destination){
+        super(start,destination);
+        //price =price-(int)(price*off)
     }
 
     @Override
     public int price(){
-        return (abs()*80/100)*quantity;
+        return abs()*9/10;
     }
     @Override
     public void print(){
-        System.out.println(start.name+"-"+destination.name+", Quantity:"+quantity+",  Student Ticket, Price: "+price());
+        System.out.println(start.name+"-"+destination.name+",  Student Ticket, Price: "+price());
     }
 }

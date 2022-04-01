@@ -8,9 +8,9 @@ public class Tester {
         //Constructor,constant,value
         System.out.println("Your start station?(1:Taipei , 2:Taichung , 3:Kaohsiung)");
         Scanner scanner = new Scanner(System.in);
-        int startStation = Integer.parseInt(scanner.next());
+        int startchoice = Integer.parseInt(scanner.next());
         Station start_Station = null;
-        switch (startStation){
+        switch (startchoice){
             case 1:
                 start_Station=Station.TAIPEI_STATION;
                 break;
@@ -25,9 +25,9 @@ public class Tester {
 
         }
         System.out.println("Your destination station?(1:Taipei , 2:Taichung , 3:Kaohsiung)");
-        int destinationStation = Integer.parseInt(scanner.next());
+        int destinationchoice = Integer.parseInt(scanner.next());
         Station destination_Station = null;
-        switch (destinationStation){
+        switch (destinationchoice){
             case 1:
                 destination_Station=Station.TAIPEI_STATION;
                 break;
