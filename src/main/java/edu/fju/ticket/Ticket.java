@@ -17,6 +17,6 @@ public class Ticket {
         return abs()*quantity;
     }
     public void print(){
-        System.out.println(start.name+"-"+destination.name+", General Ticket,"+abs()+" "+quantity+" ,Total:"+total());
+        System.out.println(start.name+"-"+destination.name+", General Ticket,"+abs()+" Quantity"+quantity+" ,Total:"+total());
     }
 }

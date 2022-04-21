@@ -61,19 +61,8 @@ public class Tester {
         }
         System.out.println("How much ticket do you need?");
         int  number =Integer.parseInt(scanner.next());
-        switch (number){
-            case 1:
-                ticket.quantity = 1;
-                break;
-            case 2:
-                ticket.quantity=2;
-                break;
-            case 3:
-                ticket.quantity=3;
-                break;
-            default:
-                break;
-        }
+        ticket.quantity=number;
+
 
         //System.out.println("How many ticket do you need?");
         //int number = Integer.parseInt(scanner.next());
