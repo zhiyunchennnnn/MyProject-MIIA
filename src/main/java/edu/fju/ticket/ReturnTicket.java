@@ -5,11 +5,11 @@ public class ReturnTicket extends Ticket{
         super(start,destination);
     }
     @Override
-    public int price(){
+    public int total(){
         return (abs()*2)*90/100;
     }
     @Override
     public void print(){
-        System.out.println(start.name+"-"+destination.name+",  Return Ticket, Price: "+price());
+        System.out.println(start.name+"-"+destination.name+",  Return Ticket, Price: "+total());
     }
 }

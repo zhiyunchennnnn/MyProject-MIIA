@@ -8,11 +8,11 @@ public class StudentTicket extends Ticket{
     }
 
     @Override
-    public int price(){
+    public int total(){
         return abs()*9/10;
     }
     @Override
     public void print(){
-        System.out.println(start.name+"-"+destination.name+",  Student Ticket, Price: "+price());
+        System.out.println(start.name+"-"+destination.name+",  Student Ticket, Price: "+total());
     }
 }

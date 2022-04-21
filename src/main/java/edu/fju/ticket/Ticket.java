@@ -13,10 +13,10 @@ public class Ticket {
         return (start.id-destination.id)>0? (start.id-destination.id):-(start.id-destination.id);
         //int diff = Math,abs(100-300)
     }
-    public int price(){
-        return abs();
+    public int total(){
+        return abs()*quantity;
     }
     public void print(){
-        System.out.println(start.name+"-"+destination.name+", General Ticket,  Price:" +price());
+        System.out.println(start.name+"-"+destination.name+", General Ticket,"+abs()+" "+quantity+" ,Total:"+total());
     }
 }
