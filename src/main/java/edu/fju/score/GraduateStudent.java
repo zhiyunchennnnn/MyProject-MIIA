@@ -1,6 +1,6 @@
 package edu.fju.score;
 
-public class GraduateStudent extends Students{
+public class GraduateStudent extends Students implements Printable{
     int thesis;
     /*public GraduateStudent(){
         super("Jane",60,72);

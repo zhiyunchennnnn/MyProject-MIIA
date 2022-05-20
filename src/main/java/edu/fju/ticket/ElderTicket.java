@@ -1,6 +1,6 @@
 package edu.fju.ticket;
 
-public class ElderTicket extends Ticket{
+public class ElderTicket extends StudentTicket{
     public ElderTicket(Station start, Station destination){
         super(start,destination);
     }

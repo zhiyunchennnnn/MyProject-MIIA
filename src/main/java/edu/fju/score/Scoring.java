@@ -12,6 +12,7 @@ public class Scoring {
         //candy.names="Candy";
         //candy.math=60;
         //candy.english=88;
+
         for (Students s :students) {
             s.print();
         }
