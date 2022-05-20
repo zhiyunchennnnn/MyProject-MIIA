@@ -1,4 +1,4 @@
-package edu.fju.problem.listnode;
+package problem.listnode;
 
 public class ListNode {
     int val;

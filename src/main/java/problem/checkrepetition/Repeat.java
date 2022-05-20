@@ -1,4 +1,4 @@
-package edu.fju.problem.checkRepetition;
+package problem.checkrepetition;
 
 public class Repeat {
     public static void main(String[] args) {
