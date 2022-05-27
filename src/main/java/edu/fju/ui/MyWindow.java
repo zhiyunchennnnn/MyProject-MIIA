@@ -18,8 +18,8 @@ public class MyWindow {
         //add component
         JButton button = new JButton("ok");
         //Anonymous class
-        /*MyActionListener listener=new MyActionListener();
-        button.addActionListener(listener);*/
+//       MyActionListener listener=new MyActionListener();
+//        button.addActionListener(listener);
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
