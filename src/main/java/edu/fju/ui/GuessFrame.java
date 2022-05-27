@@ -32,7 +32,6 @@ public class GuessFrame extends JFrame {
 
     public static void main(String[] args) {
         GuessFrame guess = new GuessFrame();
-//        guess.setSize(600,400);
-//        guess.setVisible(true);
+
     }
 }
