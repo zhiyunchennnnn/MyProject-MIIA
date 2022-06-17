@@ -27,9 +27,9 @@ public class ScoringFile {
 //                data= fileReader.read();
 
         }catch (FileNotFoundException e ){
-            System.out.println("");
+            System.out.println("檔案讀取失敗");
         }catch (IOException i){
-            System.out.println("");
+            System.out.println("資料讀取失敗");
         }
         System.out.println("Testing");
     }
